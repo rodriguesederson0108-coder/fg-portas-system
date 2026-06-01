@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import { useEffect, useState } from "react";
 import { salvarLogin, verificarLogin } from "@/app/autenticacao/auth";
 
@@ -42,13 +41,11 @@ export default function LoginPage() {
       <section className="login-brand-panel">
         <div className="login-brand-content">
           <div className="login-em-logo-area">
-            <Image
-              src="/em-nexus.JPEG"
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src="/em-nexus.png?v=4"
               alt="Logo EM Nexus"
-              width={500}
-              height={350}
               className="login-em-logo"
-              priority
             />
           </div>
 
@@ -85,13 +82,11 @@ export default function LoginPage() {
           <div className="login-client-header">
             <span>Sistema administrativo</span>
 
-            <Image
-              src="/logo.png.PNG"
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src="/fg-logo.png?v=4"
               alt="Logo FG Portas"
-              width={150}
-              height={90}
               className="login-fg-logo"
-              priority
             />
           </div>
 
